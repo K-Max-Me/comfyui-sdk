@@ -24,6 +24,11 @@ export interface BearerTokenCredentials {
   token: string;
 }
 
+export interface CustomTokensCredentials {
+  type: "custom_tokens";
+  tokens: Record<string, string>;
+}
+
 export interface HistoryResponse {
   [key: string]: HistoryEntry;
 }
